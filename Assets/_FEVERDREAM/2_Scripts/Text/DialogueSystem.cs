@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class DialogueSystem : MonoBehaviour
 {
-    [SerializeField]
-    private DialogueBox dialogueBox = new DialogueBox();
+    public DialogueBox dialogueBox = new DialogueBox();
 
+    public static DialogueSystem instance;
+
+    private void Awake()
+    {
+       if(instance == null)
+       {
+           instance = this;
+       }
+       else
+       {
+           Destroy(gameObject);
+       }
+
+    }
 }
