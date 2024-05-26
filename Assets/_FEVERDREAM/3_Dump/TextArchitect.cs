@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
-public class TextArchitect
+public class TextArchitect : MonoBehaviour
 {
     #region TMPro config
 
@@ -97,7 +97,7 @@ public class TextArchitect
     }
 
 
-    IEnumerator BuildingTheText()
+    public IEnumerator BuildingTheText()
     {
         PrepareTypewriterEffect();
 
