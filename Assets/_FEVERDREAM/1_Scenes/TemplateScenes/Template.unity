@@ -419,6 +419,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameInterfaceCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6070957077105808099, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6070957077105808099, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8860255823198558834, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_Pivot.x
       value: 0

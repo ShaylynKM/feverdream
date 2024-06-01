@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e43b78230d728d447b5829db3d41bbe8, type: 3}
-  m_Name: TestDialogue
+  m_Script: {fileID: 11500000, guid: 6d843c00a958058429450e3d38e9b863, type: 3}
+  m_Name: Test2
   m_EditorClassIdentifier: 
-  DialogueLines:
-  - I hate it here
-  - Genuinely disgusting
-  OptionText:
-  - 
-  Options:
-  - {fileID: 0}
+  lines:
+  - Speaker:
+      SpeakerName: 
+    Line: Now I'm truly nobody.
