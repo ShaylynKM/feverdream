@@ -42,7 +42,11 @@ public class DialogueManager : MonoBehaviour
 
     private bool _isTyping = false; // Flag if text is currently being typed
 
+    [SerializeField]
     private float _typingSpeed = 0.05f; // Speed text characters are revealed in dialogue box
+
+    [SerializeField]
+    private float _dialogueLoad = 0.1f;
 
     private void Awake()
     {
@@ -52,6 +56,17 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(WaitForLoad());
+    }
+
+    private IEnumerator WaitForLoad()
+    {
+        _dialogueText.text = ""; // clears text
+        _dialogueBoxButton.interactable = false; // keeps player from pressing button until dialogue loads
+
+        yield return new WaitForSeconds(_dialogueLoad); // wait time for readability or dramatic effect
+
+        _dialogueBoxButton.interactable = true; // resets the button
         StartDialogue(_dialogueInformation.lines);
         Debug.Log("started dialogue");
     }
@@ -60,7 +75,7 @@ public class DialogueManager : MonoBehaviour
     {
         _lines.Clear(); // Empties the queue
 
-        foreach(DialogueLine dialogueLine in dialogueLines)
+        foreach (DialogueLine dialogueLine in dialogueLines)
         {
             _lines.Enqueue(dialogueLine);
             Debug.Log("cued lines");
@@ -72,7 +87,7 @@ public class DialogueManager : MonoBehaviour
     public void DisplayNextDialogueLine()
     {
         // If we are currently typing, complete the current sentence immediately
-        if(_isTyping == true)
+        if (_isTyping == true)
         {
             _completeCurrentSentence = true; // Ensures the typing coroutine is stopped in TypeSentence
             _isTyping = false;
@@ -80,7 +95,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         // If there are no more lines to display, end the dialogue.
-        if(_lines.Count == 0)
+        if (_lines.Count == 0)
         {
             if (_hasChoice == true)
             {
@@ -100,7 +115,7 @@ public class DialogueManager : MonoBehaviour
 
         // Starts typing the next dialogue line
         StartCoroutine(TypeSentence(currentLine));
-        
+
     }
 
     IEnumerator TypeSentence(DialogueLine dialogueLine)
@@ -118,7 +133,7 @@ public class DialogueManager : MonoBehaviour
         _isTyping = true;
 
         _completeCurrentSentence = false;
-            
+
         // Displays each character in the dialogue line at the specified typing speed
         while (_dialogueText.maxVisibleCharacters < dialogueLineCharLength)
         {
@@ -145,10 +160,10 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        if(_nextSceneName != "") // If the string for the next scene is not left empty
+        if (_nextSceneName != "") // If the string for the next scene is not left empty
         {
             Debug.Log("load next scene");
-            SceneManager.LoadScene(sceneName:_nextSceneName); // Loading by name in case I have to go back to certain scenes, such as in the case of a choice.
+            SceneManager.LoadScene(sceneName: _nextSceneName); // Loading by name in case I have to go back to certain scenes, such as in the case of a choice.
         }
         else
         {

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eabb3315490faab46a0a1b292af5330d, type: 3}
-  m_Name: AudioProto2
+  m_Name: AudioProto4
   m_EditorClassIdentifier: 
   MyAudioPairs:
   - AudioKey: 0
-    AudioValue: {fileID: 8621890905245727627, guid: 006088382d0a25646ad0a0231ebeac74, type: 3}
+    AudioValue: {fileID: 1260516241033460057, guid: 7df0e464fb3ff06429a188eb2f6bb647, type: 3}
     IsLooped: 1
     ContinueToNextScene: 0
