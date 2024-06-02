@@ -19,3 +19,6 @@ MonoBehaviour:
   - Speaker:
       SpeakerName: Nobody
     Line: <color="red">I'm Nobody.
+  choices:
+  - Choice: Explode
+  - Choice: Don't explode

@@ -33,6 +33,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private bool _hasChoice; // Option to have choices the player can select
 
+    [SerializeField]
+    private Canvas _choiceCanvas;
+
     private bool _completeCurrentSentence = false;
 
     private Queue<DialogueLine> _lines; // Queue that holds all dialogue lines for the current dialogue session
@@ -45,6 +48,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         _lines = new Queue<DialogueLine>(); // Initializes the queue
+        //_choiceCanvas.enabled = false;
     }
 
     private void Start()
@@ -68,7 +72,6 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextDialogueLine()
     {
-        Debug.Log("Displaying dialogue");
         // If we are currently typing, complete the current sentence immediately
         if(_isTyping == true)
         {
@@ -81,7 +84,8 @@ public class DialogueManager : MonoBehaviour
         {
             if (_hasChoice == true)
             {
-                _dialogueBoxButton.interactable = false; // Keeps the player from clicking the button over and over         
+                _dialogueBoxButton.interactable = false; // Keeps the player from clicking the button over and over
+                _choiceCanvas.enabled = true;
             }
             Debug.Log("no more lines");
             EndDialogue();
@@ -101,7 +105,6 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
-
         _dialogueText.text = dialogueLine.Line;
 
         string fullText = _dialogueText.text;
@@ -130,8 +133,6 @@ public class DialogueManager : MonoBehaviour
 
         _isTyping = false;// Indicates that typing is complete.
         _completeCurrentSentence = false;
-
-        // I'd like to refractor this to change how many characters are visible rather than typing them out one by one. This will allow me to use format tags.
     }
 
     // Should be attached to the dialogue box button
