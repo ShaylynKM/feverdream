@@ -44,11 +44,10 @@ public class DialogueManager : MonoBehaviour
 
     private float _typingSpeed = 0.05f; // Speed text characters are revealed in dialogue box
 
-
     private void Awake()
     {
         _lines = new Queue<DialogueLine>(); // Initializes the queue
-        //_choiceCanvas.enabled = false;
+        _choiceCanvas.enabled = false;
     }
 
     private void Start()
@@ -76,6 +75,7 @@ public class DialogueManager : MonoBehaviour
         if(_isTyping == true)
         {
             _completeCurrentSentence = true; // Ensures the typing coroutine is stopped in TypeSentence
+            _isTyping = false;
             return;
         }
 
@@ -112,6 +112,7 @@ public class DialogueManager : MonoBehaviour
         _dialogueText.maxVisibleCharacters = 0;
 
         _dialogueText.text = fullText;
+
         int dialogueLineCharLength = fullText.Length;
 
         _isTyping = true;
@@ -123,7 +124,8 @@ public class DialogueManager : MonoBehaviour
         {
             if (_completeCurrentSentence)
             {
-                _dialogueText.text = dialogueLine.Line;
+                _dialogueText.maxVisibleCharacters = dialogueLineCharLength;
+
                 break;
             }
 
