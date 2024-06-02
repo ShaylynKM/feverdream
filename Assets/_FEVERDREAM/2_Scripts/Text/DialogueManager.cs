@@ -62,6 +62,7 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator WaitForLoad()
     {
         _dialogueText.text = ""; // clears text
+        _speakerNameText.text = ""; // clears speaker name
         _dialogueBoxButton.interactable = false; // keeps player from pressing button until dialogue loads
 
         yield return new WaitForSeconds(_dialogueLoad); // wait time for readability or dramatic effect
