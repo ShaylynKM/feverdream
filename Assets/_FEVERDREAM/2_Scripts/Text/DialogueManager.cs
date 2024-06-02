@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using TMPro;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -25,6 +26,12 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField]
     public Action OnDialogueComplete; // Event triggered when dialogue is complete
+
+    [SerializeField]
+    private string _nextSceneName;
+
+    [SerializeField]
+    private bool _hasChoice; // Option to have choices the player can select
 
     private bool _completeCurrentSentence = false;
 
@@ -72,6 +79,10 @@ public class DialogueManager : MonoBehaviour
         // If there are no more lines to display, end the dialogue.
         if(_lines.Count == 0)
         {
+            if (_hasChoice == true)
+            {
+                _dialogueBoxButton.interactable = false; // Keeps the player from clicking the button over and over         
+            }
             Debug.Log("no more lines");
             EndDialogue();
             return;
@@ -90,23 +101,31 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
-        _dialogueText.text = ""; // Clears the current text
-        _isTyping = true; // It's typing! Wow.
-        _completeCurrentSentence = false;
 
-        // Types out each character in the dialogue line at the specified typing speed
-        foreach(char letter in dialogueLine.Line.ToCharArray())
+        _dialogueText.text = dialogueLine.Line;
+
+        string fullText = _dialogueText.text;
+
+        _dialogueText.maxVisibleCharacters = 0;
+
+        _dialogueText.text = fullText;
+        int dialogueLineCharLength = fullText.Length;
+
+        _isTyping = true;
+
+        _completeCurrentSentence = false;
+            
+        // Displays each character in the dialogue line at the specified typing speed
+        while (_dialogueText.maxVisibleCharacters < dialogueLineCharLength)
         {
             if (_completeCurrentSentence)
             {
                 _dialogueText.text = dialogueLine.Line;
                 break;
             }
-            else
-            {
-                _dialogueText.text += letter;
-                yield return new WaitForSecondsRealtime(_typingSpeed);
-            }
+
+            _dialogueText.maxVisibleCharacters++; // Increase the amount of visible characters one by one
+            yield return new WaitForSecondsRealtime(_typingSpeed);
         }
 
         _isTyping = false;// Indicates that typing is complete.
@@ -123,14 +142,10 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-        int nextSceneIndex = currentSceneIndex + 1;
-
-        if(nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        if(_nextSceneName != "") // If the string for the next scene is not left empty
         {
             Debug.Log("load next scene");
-            SceneManager.LoadScene(nextSceneIndex);
+            SceneManager.LoadScene(sceneName:_nextSceneName); // Loading by name in case I have to go back to certain scenes, such as in the case of a choice.
         }
         else
         {

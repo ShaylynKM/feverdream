@@ -416,6 +416,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2766666147707109550, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
+      propertyPath: _hasChoice
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766666147707109550, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: TypingSpeed
       value: 0.1
       objectReference: {fileID: 0}
@@ -423,6 +427,10 @@ PrefabInstance:
       propertyPath: _dialogueText
       value: 
       objectReference: {fileID: 1859603550316177403}
+    - target: {fileID: 2766666147707109550, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
+      propertyPath: _nextSceneName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2766666147707109550, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: _speakerNameText
       value: 

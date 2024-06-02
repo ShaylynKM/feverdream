@@ -18,4 +18,4 @@ MonoBehaviour:
     Line: Hi. Hello. How are you?
   - Speaker:
       SpeakerName: Nobody
-    Line: I'm Nobody.
+    Line: <color="red">I'm Nobody.

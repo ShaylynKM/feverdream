@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_FEVERDREAM/3_Dump/TestScene1.unity
+    path: Assets/_FEVERDREAM/1_Scenes/PrototypeScenes/TestScene1.unity
     guid: 6332ce7379fbd6e4fb3285cb7990646b
   - enabled: 1
-    path: Assets/_FEVERDREAM/3_Dump/TestScene2.unity
+    path: Assets/_FEVERDREAM/1_Scenes/PrototypeScenes/TestScene2.unity
     guid: a035ff1257bb3e2419ec34e5c1836650
   m_configObjects: {}
