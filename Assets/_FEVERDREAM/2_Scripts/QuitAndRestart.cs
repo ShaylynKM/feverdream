@@ -9,7 +9,7 @@ public class QuitAndRestart : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(0);
         }
 
         if(Input.GetKeyDown(KeyCode.Escape))
