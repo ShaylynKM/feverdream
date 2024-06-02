@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_FEVERDREAM/1_Scenes/PrototypeScenes/TestScene1.unity
-    guid: 6332ce7379fbd6e4fb3285cb7990646b
+    path: Assets/_FEVERDREAM/1_Scenes/PrototypeScenes/Proto1.unity
+    guid: 456f7ca6ec96944488b43ffd12abd73d
   - enabled: 1
-    path: Assets/_FEVERDREAM/1_Scenes/PrototypeScenes/TestScene2.unity
-    guid: a035ff1257bb3e2419ec34e5c1836650
+    path: Assets/_FEVERDREAM/1_Scenes/PrototypeScenes/Proto2.unity
+    guid: c18b83ae3695c974587df2e8f973a348
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/PrototypeScenes/Proto3.unity
+    guid: 10f968128514af147bb583374bb57c00
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/PrototypeScenes/Proto4.unity
+    guid: 2a70c17e7fd9d464ab959c52ee2a18e4
   m_configObjects: {}

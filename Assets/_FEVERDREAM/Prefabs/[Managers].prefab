@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2895961201585141925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4405896637974795575}
+  - component: {fileID: 3642045499837346684}
+  - component: {fileID: 2261936564093302626}
+  m_Layer: 0
+  m_Name: '[Managers]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4405896637974795575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895961201585141925}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3642045499837346684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895961201585141925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6210782d5bb8444a0bc8b89b19fc20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueInformation: {fileID: 0}
+  _dialogueBoxButton: {fileID: 1518906945271328440, guid: f999d4f8df263cc459a3f58f908cd29f, type: 3}
+  _speakerNameText: {fileID: 2218774088278676380, guid: 8fa1538cd34639549849fe7df0d8b535, type: 3}
+  _dialogueText: {fileID: 3487762223028157533, guid: 1575e93ac38c5d64bbf704dbb5575560, type: 3}
+  _nextSceneName: 
+  _hasChoice: 0
+  _choiceCanvas: {fileID: 0}
+--- !u!114 &2261936564093302626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895961201585141925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4769cc03f85de1643b6fc5e0ec62b90e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioVolume: 0.5
+  _audioFiles: {fileID: 11400000, guid: 9d5fb187dd906d04292fc40980dcacdd, type: 2}
