@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4405896637974795575}
   - component: {fileID: 3642045499837346684}
-  - component: {fileID: 2261936564093302626}
   m_Layer: 0
   m_Name: '[Managers]'
   m_TagString: Untagged
@@ -52,17 +51,8 @@ MonoBehaviour:
   _nextSceneName: 
   _hasChoice: 0
   _choiceCanvas: {fileID: 0}
---- !u!114 &2261936564093302626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895961201585141925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4769cc03f85de1643b6fc5e0ec62b90e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AudioVolume: 0.5
-  _audioFiles: {fileID: 11400000, guid: 9d5fb187dd906d04292fc40980dcacdd, type: 2}
+  _typingSpeed: 0.05
+  _dialogueLoad: 0.1
+  PlayTypingSFX:
+    m_PersistentCalls:
+      m_Calls: []

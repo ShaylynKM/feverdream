@@ -2,9 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEditor.VersionControl;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -48,10 +50,13 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private float _dialogueLoad = 0.1f;
 
+    public UnityEvent PlayTypingSFX;
+
     private void Awake()
     {
         _lines = new Queue<DialogueLine>(); // Initializes the queue
         _choiceCanvas.enabled = false;
+
     }
 
     private void Start()
@@ -90,6 +95,7 @@ public class DialogueManager : MonoBehaviour
         // If we are currently typing, complete the current sentence immediately
         if (_isTyping == true)
         {
+            PlayTypingSFX.Invoke(); // Play the sound effect for typing
             _completeCurrentSentence = true; // Ensures the typing coroutine is stopped in TypeSentence
             _isTyping = false;
             return;

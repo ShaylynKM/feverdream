@@ -13,8 +13,6 @@ public struct AudioPairs
 {
     public AudioNames AudioKey;
     public AudioSource AudioValue;
-    public bool IsLooped;
-    public bool ContinueToNextScene;
 }
 
 public enum AudioNames
