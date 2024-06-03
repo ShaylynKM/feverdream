@@ -34,9 +34,9 @@ public class PauseMenuManager : MonoBehaviour
 
     public void OnResume()
     {
-        Time.timeScale = 1f;
-
         _pauseMenu.SetActive(false);
+
+        Time.timeScale = 1f;
     }
 
     public void OnSettings()
@@ -47,6 +47,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void OnQuitWithoutSaving()
     {
+        Time.timeScale = 1f; // Bug where the game would stay paused when loading a new game after quitting to the main menu. This fixed it
         SceneManager.LoadScene("MainMenu");
     }
 
