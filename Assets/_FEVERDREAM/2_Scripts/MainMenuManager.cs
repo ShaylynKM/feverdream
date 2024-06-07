@@ -11,15 +11,15 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private Canvas _mainMenuCanvas;
 
-    [SerializeField]
-    private GameObject _settingsMenu;
+    //[SerializeField]
+    //private GameObject _settingsMenu;
 
     [SerializeField]
     private GameObject _loadSaveMenu;
 
     private void Awake()
     {
-        _settingsMenu.SetActive(false);
+        //_settingsMenu.SetActive(false);
         _loadSaveMenu.SetActive(false);
     }
 
@@ -34,11 +34,11 @@ public class MainMenuManager : MonoBehaviour
         Debug.Log("load game");
     }
 
-    public void OnSettings()
-    {
-        _settingsMenu.SetActive(true);
-        Debug.Log("settings");
-    }
+    //public void OnSettings()
+    //{
+    //    _settingsMenu.SetActive(true);
+    //    Debug.Log("settings");
+    //}
 
     public void OnQuit()
     {
@@ -48,9 +48,9 @@ public class MainMenuManager : MonoBehaviour
 
     public void CloseMenus()
     {
-        if(_settingsMenu.activeInHierarchy || _loadSaveMenu.activeInHierarchy)
+        if(/*_settingsMenu.activeInHierarchy ||*/ _loadSaveMenu.activeInHierarchy)
         {
-            _settingsMenu.SetActive(false);
+            //_settingsMenu.SetActive(false);
             _loadSaveMenu.SetActive(false);
 
             // For closing menus within the main menu

@@ -1,33 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8960268940845597410
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
-  m_Name: Grain
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  colored:
-    overrideState: 0
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 1
-  size:
-    overrideState: 1
-    value: 3
-  lumContrib:
-    overrideState: 0
-    value: 0.8
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,9 +13,9 @@ MonoBehaviour:
   m_Name: Main Camera Profile
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: -8960268940845597410}
-  - {fileID: 665864505175107195}
---- !u!114 &665864505175107195
+  - {fileID: 7047479835610988188}
+  - {fileID: 8534844926447071868}
+--- !u!114 &7047479835610988188
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,22 +33,22 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 1
+    value: 5
   threshold:
     overrideState: 0
-    value: 1
+    value: 9.28
   softKnee:
-    overrideState: 1
-    value: 0.892
+    overrideState: 0
+    value: 1
   clamp:
     overrideState: 0
     value: 65472
   diffusion:
-    overrideState: 1
-    value: 7
+    overrideState: 0
+    value: 6
   anamorphicRatio:
     overrideState: 0
-    value: 0
+    value: 0.73
   color:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -90,3 +62,31 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 0
     value: 0
+--- !u!114 &8534844926447071868
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
+  m_Name: Grain
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  colored:
+    overrideState: 1
+    value: 0
+  intensity:
+    overrideState: 1
+    value: 1
+  size:
+    overrideState: 0
+    value: 1.5
+  lumContrib:
+    overrideState: 0
+    value: 0.8
