@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using BayatGames.SaveGameFree;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -32,6 +33,11 @@ public class MainMenuManager : MonoBehaviour
     {
         _loadSaveMenu.SetActive(true);
         Debug.Log("load game");
+
+        
+        string savedScene = SaveGame.Load<string>("savedScene");
+        SceneManager.LoadScene(savedScene);
+      
     }
 
     //public void OnSettings()

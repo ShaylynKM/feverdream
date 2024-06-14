@@ -68,6 +68,8 @@ public class VolumeControls : MonoBehaviour
         _audioMixer.SetFloat("MasterVolume", volume);
 
         PlayerPrefs.SetFloat("Volume", volume);
+
+        Debug.Log("SetVolume");
     }
 
     private void OnSliderFound()
@@ -81,8 +83,6 @@ public class VolumeControls : MonoBehaviour
             _volumeSlider.value = _currentSavedVolume;
 
             Debug.Log("assigned the listener");
-
-
         }
         else
         {
