@@ -28,17 +28,11 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene(_firstSceneIndex); // Loads the specified scene
     }
 
-    public void OnLoadGame()
+    public void OnContinue()
     {
-        _loadSaveMenu.SetActive(true);
         Debug.Log("load game");
     }
 
-    //public void OnSettings()
-    //{
-    //    _settingsMenu.SetActive(true);
-    //    Debug.Log("settings");
-    //}
 
     public void OnQuit()
     {
@@ -46,15 +40,14 @@ public class MainMenuManager : MonoBehaviour
         Debug.Log("quitting game");
     }
 
-    public void CloseMenus()
-    {
-        if(/*_settingsMenu.activeInHierarchy ||*/ _loadSaveMenu.activeInHierarchy)
-        {
-            //_settingsMenu.SetActive(false);
-            _loadSaveMenu.SetActive(false);
+    //public void CloseMenus()
+    //{
+    //    if(_loadSaveMenu.activeInHierarchy)
+    //    {
+    //        _loadSaveMenu.SetActive(false);
 
-            // For closing menus within the main menu
-        }
-    }
+    //        // For closing menus within the main menu
+    //    }
+    //}
 
 }
