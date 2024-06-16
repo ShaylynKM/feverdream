@@ -61,6 +61,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 662772595670506005, guid: cd8c4edf15b9f8b4696b32b5677eecbf, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 00d7f2565e63da44da858ec73c801a2b, type: 2}
     - target: {fileID: 690304510542779315, guid: cd8c4edf15b9f8b4696b32b5677eecbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 440.81067
@@ -131,6 +135,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4948803973406523168, guid: f757a1da44dcf7c4db0dd104839d6069, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 00d7f2565e63da44da858ec73c801a2b, type: 2}
     - target: {fileID: 7495268404684323192, guid: f757a1da44dcf7c4db0dd104839d6069, type: 3}
       propertyPath: m_LocalPosition.x
       value: -259.25977
@@ -237,6 +245,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8621890905245727627, guid: 006088382d0a25646ad0a0231ebeac74, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 00d7f2565e63da44da858ec73c801a2b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -263,6 +275,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1260516241033460057, guid: 7df0e464fb3ff06429a188eb2f6bb647, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 00d7f2565e63da44da858ec73c801a2b, type: 2}
     - target: {fileID: 4073049386819389601, guid: 7df0e464fb3ff06429a188eb2f6bb647, type: 3}
       propertyPath: m_Name
       value: SpookiestBeepBoop

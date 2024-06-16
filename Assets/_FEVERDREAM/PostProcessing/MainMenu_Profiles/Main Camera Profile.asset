@@ -38,8 +38,8 @@ MonoBehaviour:
     overrideState: 0
     value: 9.28
   softKnee:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 0.5
   clamp:
     overrideState: 0
     value: 65472
@@ -79,14 +79,14 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   colored:
-    overrideState: 1
+    overrideState: 0
     value: 0
   intensity:
     overrideState: 1
     value: 1
   size:
-    overrideState: 0
-    value: 1.5
+    overrideState: 1
+    value: 1
   lumContrib:
     overrideState: 0
-    value: 0.8
+    value: 0

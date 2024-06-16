@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class VolumeControls : MonoBehaviour
 {
-    // CURRENT ISSUE: This code is working flawlessly, except the AudioListener shows Inactive in the Mixer between scenes.
-
     public static VolumeControls Instance;
 
     [SerializeField]
@@ -18,7 +16,7 @@ public class VolumeControls : MonoBehaviour
     private Slider _volumeSlider;
 
     // Audio volume in db
-    private const float _minValue = -20f;
+    private const float _minValue = -80f;
     private const float _maxValue = 0f;
 
     [SerializeField]
@@ -72,7 +70,17 @@ public class VolumeControls : MonoBehaviour
 
     private void OnSliderFound()
     {
-        _volumeSlider = GameObject.Find("VolumeSlider").GetComponent<Slider>(); // Will change from Find
+        // Only way I've been able to properly assign the slider. Searches for the slider in the children of all root objects and assigns it accordingly.
+
+        foreach (GameObject rootObject in SceneManager.GetActiveScene().GetRootGameObjects())
+        {
+            Slider newSlider = rootObject.GetComponentInChildren<Slider>(true);
+            if(newSlider != null && newSlider.name == "VolumeSlider")
+            {
+                _volumeSlider = newSlider;
+                break;
+            }
+        }
 
         if(_volumeSlider != null)
         {
@@ -90,4 +98,5 @@ public class VolumeControls : MonoBehaviour
         }
 
     }
+
 }

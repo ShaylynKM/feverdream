@@ -12,17 +12,21 @@ public class PauseMenuManager : MonoBehaviour
     private GameObject _quitWithoutSaving;
 
     [SerializeField]
-    private GameObject _settingsMenu;
+    private GameObject _savePanel;
 
     [SerializeField]
-    private GameObject _loadSaveMenu;
+    private GameObject _savedPanel;
+
+    [SerializeField]
+    private GameObject _loadPanel;
 
     private void Awake()
     {
         _pauseMenu.SetActive(false);
         _quitWithoutSaving.SetActive(false);
-        //_settingsMenu.SetActive(false);
-        //_loadSaveMenu.SetActive(false);
+        _savePanel.SetActive(false);
+        _savedPanel.SetActive(false);
+        _loadPanel.SetActive(false);
     }
 
     public void OnPause()
@@ -39,13 +43,7 @@ public class PauseMenuManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void OnSettings()
-    {
-        //_settingsMenu.SetActive(true);
-        Debug.Log("settings");
-    }
-
-    public void OnQuitWithoutSaving()
+    public void OnQuit()
     {
         Time.timeScale = 1f; // Bug where the game would stay paused when loading a new game after quitting to the main menu. This fixed it
         SceneManager.LoadScene("MainMenu");
@@ -54,20 +52,30 @@ public class PauseMenuManager : MonoBehaviour
     public void OnMainMenu()
     {
         _quitWithoutSaving.SetActive(true);
+        _pauseMenu.SetActive(false);
     }
 
-    public void OnSaveLoad()
+    public void OnSave()
     {
-        //_loadSaveMenu.SetActive(true);
+        _savePanel.SetActive(true);
+        _pauseMenu.SetActive(false);
+    }
+
+    public void OnLoad()
+    {
+        _loadPanel.SetActive(true);
+        _pauseMenu.SetActive(false);
     }
 
     public void CloseMenus()
     {
-        if (/*_settingsMenu.activeInHierarchy || _loadSaveMenu.activeInHierarchy ||*/ _quitWithoutSaving.activeInHierarchy)
+        if (_savePanel.activeInHierarchy || _savePanel.activeInHierarchy || _loadPanel.activeInHierarchy || _quitWithoutSaving.activeInHierarchy)
         {
-            //_settingsMenu.SetActive(false);
-            //_loadSaveMenu.SetActive(false);
+            _savePanel.SetActive(false);
             _quitWithoutSaving.SetActive(false);
+            _savedPanel.SetActive(false);
+            _loadPanel.SetActive(false);
+            _pauseMenu.SetActive(true);
 
             // For closing menus within the main menu
         }

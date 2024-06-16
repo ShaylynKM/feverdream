@@ -33,7 +33,7 @@ public class DialogueManager : MonoBehaviour
     private bool _hasChoice; // Option to have choices the player can select
 
     [SerializeField]
-    private Canvas _choiceCanvas;
+    private GameObject _choiceObject;
 
     private bool _completeCurrentSentence = false;
 
@@ -52,7 +52,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         _lines = new Queue<DialogueLine>(); // Initializes the queue
-        _choiceCanvas.enabled = false;
+        _choiceObject.SetActive(false);
 
     }
 
@@ -104,7 +104,7 @@ public class DialogueManager : MonoBehaviour
             if (_hasChoice == true)
             {
                 _dialogueBoxButton.interactable = false; // Keeps the player from clicking the button over and over
-                _choiceCanvas.enabled = true;
+                _choiceObject.SetActive(true);
             }
             Debug.Log("no more lines");
             EndDialogue();

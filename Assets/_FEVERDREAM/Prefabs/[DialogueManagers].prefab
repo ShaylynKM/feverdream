@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4405896637974795575}
   - component: {fileID: 3642045499837346684}
+  - component: {fileID: 4245747497657632293}
   m_Layer: 0
-  m_Name: '[Managers]'
+  m_Name: '[DialogueManagers]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,9 +51,22 @@ MonoBehaviour:
   _dialogueText: {fileID: 3487762223028157533, guid: 1575e93ac38c5d64bbf704dbb5575560, type: 3}
   _nextSceneName: 
   _hasChoice: 0
-  _choiceCanvas: {fileID: 0}
+  _choiceObject: {fileID: 0}
   _typingSpeed: 0.05
   _dialogueLoad: 0.1
   PlayTypingSFX:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4245747497657632293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895961201585141925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd973c3082eb8734ea18e7ceb233254f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _choiceScene: 
