@@ -20,4 +20,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_04.unity
     guid: 2190b6c69505ea44b92711e1ec1a637a
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_05.unity
+    guid: 70e3d0682124e4d4ca85f43a854da885
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_06.unity
+    guid: 31bd8a5f12139314dbda545f664276d3
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_07.unity
+    guid: d25c5e104864b9e45853d0f388677f81
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_08.unity
+    guid: 740aaf7c83d8cb04a860de6b326a6376
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_09.unity
+    guid: e90e2ad8bebea184d8122facab2a26a0
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_10.unity
+    guid: 8f6e179b7f12fa64ebde1f45f97e7e5f
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_11.unity
+    guid: 353b4269f12e4724eb95eb381bdefb95
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_12.unity
+    guid: ce5d71cd59d213043aa5db10cbf8c624
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_13.unity
+    guid: f6f82005318ff164d8cc3a630a743176
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_14.unity
+    guid: 81ea49dcffeb15e408d28cd0cfb0c5ce
   m_configObjects: {}

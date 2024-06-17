@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d843c00a958058429450e3d38e9b863, type: 3}
+  m_Name: Loop1_12
+  m_EditorClassIdentifier: 
+  lines:
+  - Speaker:
+      SpeakerName: Doubt
+    Line: You can't see any worms, you say? That's the point.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: Are they there, or are they not there? You can never be too sure you're
+      safe. Best to assume you aren't.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: What do they do? We don't know. That's the problem.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: These ones seemed to have gotten you sick.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: That's why I can't let you see your parents until you clean up.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: You want to see them, right? Then go. Wash.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: I'll be waiting.
