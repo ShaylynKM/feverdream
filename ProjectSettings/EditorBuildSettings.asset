@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_03.unity
     guid: 9efdb5501ffcb3e4992b583eb7b9d6b2
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_04.unity
+    guid: 2190b6c69505ea44b92711e1ec1a637a
   m_configObjects: {}
