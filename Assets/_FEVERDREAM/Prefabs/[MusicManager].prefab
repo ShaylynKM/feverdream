@@ -355,6 +355,10 @@ PrefabInstance:
       value: PlaceholderMusicBox
       objectReference: {fileID: 0}
     - target: {fileID: 4948803973406523168, guid: f757a1da44dcf7c4db0dd104839d6069, type: 3}
+      propertyPath: m_Volume
+      value: 0.509
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948803973406523168, guid: f757a1da44dcf7c4db0dd104839d6069, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 94b51bf16143a0c4db6dffa2735e3781, type: 3}
