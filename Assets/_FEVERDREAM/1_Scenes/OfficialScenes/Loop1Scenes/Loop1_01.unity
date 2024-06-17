@@ -519,6 +519,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &454191996 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3932250042648618879, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+  m_PrefabInstance: {fileID: 1137491330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1110839316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -580,6 +585,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16ac1931390a60f4dab32b9ec787546a, type: 3}
+--- !u!1001 &1137491330
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1202.3488
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 532.0748
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.084193
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250060871532224536, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932250042648618879, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932250042648618879, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5426113807905173686, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: m_Name
+      value: '[MusicManager]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497676054549555201, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+      propertyPath: _music
+      value: 
+      objectReference: {fileID: 454191996}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
 --- !u!1001 &1682514915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -600,6 +674,10 @@ PrefabInstance:
       propertyPath: _choiceObject
       value: 
       objectReference: {fileID: 1859603550316177402}
+    - target: {fileID: 3642045499837346684, guid: b976bd073f6635145afdeaa02e5ea585, type: 3}
+      propertyPath: _dialogueLoad
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3642045499837346684, guid: b976bd073f6635145afdeaa02e5ea585, type: 3}
       propertyPath: _dialogueText
       value: 
@@ -1336,3 +1414,4 @@ SceneRoots:
   - {fileID: 1682514915}
   - {fileID: 1110839316}
   - {fileID: 376439678}
+  - {fileID: 1137491330}

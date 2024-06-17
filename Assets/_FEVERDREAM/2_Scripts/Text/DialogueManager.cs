@@ -47,12 +47,20 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private float _dialogueLoad = 0.1f;
 
-    public UnityEvent PlayTypingSFX;
+    private AudioSource _audioSource;
+
+    [SerializeField]
+    private AudioClip _normalSFX;
+
+    [SerializeField]
+    private AudioClip _doubtSFX;
 
     private void Awake()
     {
         _lines = new Queue<DialogueLine>(); // Initializes the queue
         _choiceObject.SetActive(false);
+
+        _audioSource = GetComponentInChildren<AudioSource>();
 
     }
 
@@ -92,7 +100,6 @@ public class DialogueManager : MonoBehaviour
         // If we are currently typing, complete the current sentence immediately
         if (_isTyping == true)
         {
-            PlayTypingSFX.Invoke(); // Play the sound effect for typing
             _completeCurrentSentence = true; // Ensures the typing coroutine is stopped in TypeSentence
             _isTyping = false;
             return;
@@ -149,6 +156,22 @@ public class DialogueManager : MonoBehaviour
             }
 
             _dialogueText.maxVisibleCharacters++; // Increase the amount of visible characters one by one
+
+            if (_audioSource.isPlaying == false)
+            {
+                if (_speakerNameText.text == "Doubt" || _speakerNameText.text == "Figure")
+                {
+                    _audioSource.clip = _doubtSFX;
+                    _audioSource.Play();
+                }
+                else
+                {
+                    _audioSource.clip = _normalSFX;
+                    _audioSource.Play();
+                }
+            }
+            
+
             yield return new WaitForSecondsRealtime(_typingSpeed);
         }
 
