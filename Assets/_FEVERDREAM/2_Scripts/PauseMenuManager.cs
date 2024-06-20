@@ -9,7 +9,7 @@ public class PauseMenuManager : MonoBehaviour
     private GameObject _pauseMenu;
 
     [SerializeField]
-    private GameObject _quitWithoutSaving;
+    private GameObject _quitMainMenu;
 
     [SerializeField]
     private GameObject _savePanel;
@@ -20,13 +20,17 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject _loadPanel;
 
+    [SerializeField]
+    private GameObject _settingsMenu;
+
     private void Awake()
     {
         _pauseMenu.SetActive(false);
-        _quitWithoutSaving.SetActive(false);
+        _quitMainMenu.SetActive(false);
         _savePanel.SetActive(false);
         _savedPanel.SetActive(false);
         _loadPanel.SetActive(false);
+        _settingsMenu.SetActive(false);
     }
 
     public void OnPause()
@@ -51,7 +55,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void OnMainMenu()
     {
-        _quitWithoutSaving.SetActive(true);
+        _quitMainMenu.SetActive(true);
         _pauseMenu.SetActive(false);
     }
 
@@ -67,14 +71,21 @@ public class PauseMenuManager : MonoBehaviour
         _pauseMenu.SetActive(false);
     }
 
+    public void OnSettings()
+    {
+        _settingsMenu.SetActive(true);
+        _pauseMenu.SetActive(false);
+    }
+
     public void CloseMenus()
     {
-        if (_savePanel.activeInHierarchy || _savePanel.activeInHierarchy || _loadPanel.activeInHierarchy || _quitWithoutSaving.activeInHierarchy)
+        if (_savePanel.activeInHierarchy || _savePanel.activeInHierarchy || _loadPanel.activeInHierarchy || _quitMainMenu.activeInHierarchy || _settingsMenu.activeInHierarchy)
         {
             _savePanel.SetActive(false);
-            _quitWithoutSaving.SetActive(false);
+            _quitMainMenu.SetActive(false);
             _savedPanel.SetActive(false);
             _loadPanel.SetActive(false);
+            _settingsMenu.SetActive(false);
             _pauseMenu.SetActive(true);
 
             // For closing menus within the main menu
