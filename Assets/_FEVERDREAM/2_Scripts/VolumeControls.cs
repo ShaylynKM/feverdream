@@ -70,28 +70,16 @@ public class VolumeControls : MonoBehaviour
 
     private void OnSliderFound()
     {
-        // Only way I've been able to properly assign the slider. Searches for the slider in the children of all root objects and assigns it accordingly.
+        // Finds and assigns a new volume slider for when the scene changes
 
-        foreach (GameObject rootObject in SceneManager.GetActiveScene().GetRootGameObjects())
-        {
-            Slider newSlider = rootObject.GetComponentInChildren<Slider>(true);
-            if(newSlider != null && newSlider.name == "VolumeSlider")
-            {
-                _volumeSlider = newSlider;
-                break;
-            }
-        }
+        _volumeSlider = FindObjectOfType<Slider>(true);
 
-        if(_volumeSlider != null)
+        if(_volumeSlider != null && _volumeSlider.name == "VolumeSlider")
         {
             _volumeSlider.onValueChanged.AddListener(SetVolume);
-
             _volumeSlider.value = _currentSavedVolume;
-
-            Debug.Log("assigned the listener");
-
-
         }
+
         else
         {
             Debug.Log("Slider not found");

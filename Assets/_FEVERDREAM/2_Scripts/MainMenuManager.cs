@@ -11,19 +11,29 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private Canvas _mainMenuCanvas;
 
-    //[SerializeField]
-    //private GameObject _settingsMenu;
+    [SerializeField]
+    private GameObject _settingsMenu;
 
     [SerializeField]
-    private GameObject _loadSaveMenu;
+    private GameObject _newGameMenu;
+
+    [SerializeField]
+    private GameObject _quitGameMenu;
 
     private void Awake()
     {
-        //_settingsMenu.SetActive(false);
-        _loadSaveMenu.SetActive(false);
+        _settingsMenu.SetActive(false);
+        _newGameMenu.SetActive(false);
+        _quitGameMenu.SetActive(false);
+
     }
 
-    public void OnNewGame()
+    public void OnNewGameButton()
+    {
+        _newGameMenu.SetActive(true);
+    }
+
+    public void OnNewGameStart()
     {
         SceneManager.LoadScene(_firstSceneIndex); // Loads the specified scene
     }
@@ -33,6 +43,15 @@ public class MainMenuManager : MonoBehaviour
         Debug.Log("load game");
     }
 
+    public void OnSettings()
+    {
+        _settingsMenu.SetActive(true);
+    }
+
+    public void OnQuitButton()
+    {
+        _quitGameMenu.SetActive(true);
+    }
 
     public void OnQuit()
     {
@@ -40,14 +59,16 @@ public class MainMenuManager : MonoBehaviour
         Debug.Log("quitting game");
     }
 
-    //public void CloseMenus()
-    //{
-    //    if(_loadSaveMenu.activeInHierarchy)
-    //    {
-    //        _loadSaveMenu.SetActive(false);
+    public void CloseMenus()
+    {
+        if (_settingsMenu.activeInHierarchy || _quitGameMenu.activeInHierarchy || _newGameMenu.activeInHierarchy)
+        {
+            _settingsMenu.SetActive(false);
+            _quitGameMenu.SetActive(false);
+            _newGameMenu.SetActive(false);
 
-    //        // For closing menus within the main menu
-    //    }
-    //}
+            // For closing menus within the main menu
+        }
+    }
 
 }
