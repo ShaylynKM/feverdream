@@ -213,6 +213,11 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("The game is over. Go home."); // Will fill this in when I have something to put at the end of the game.
         }
     }
+
+    public void MuteUnmute()
+    {
+
+    }
 }
 
 [System.Serializable]

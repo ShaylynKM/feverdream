@@ -16,7 +16,6 @@ public class VolumeControls : MonoBehaviour
     private Slider _volumeSlider;
 
     // Audio volume in db
-    private const float _minValue = -80f;
     private const float _maxValue = 0f;
 
     [SerializeField]
@@ -71,7 +70,6 @@ public class VolumeControls : MonoBehaviour
     private void OnSliderFound()
     {
         // Finds and assigns a new volume slider for when the scene changes
-
         _volumeSlider = FindObjectOfType<Slider>(true);
 
         if(_volumeSlider != null && _volumeSlider.name == "VolumeSlider")

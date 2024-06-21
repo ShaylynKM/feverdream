@@ -121,7 +121,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 6137384397542205211}
   m_HandleRect: {fileID: 5212398955577836375}
   m_Direction: 0
-  m_MinValue: -20
+  m_MinValue: -60
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -213,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: d937bc8f6429f04459409efc245c5eb4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27f29b144ce1da24fbe229dddd31058f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
