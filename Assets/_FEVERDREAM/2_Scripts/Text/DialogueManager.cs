@@ -62,11 +62,22 @@ public class DialogueManager : MonoBehaviour
 
         _audioSource = GetComponentInChildren<AudioSource>();
 
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
     }
 
     private void Start()
     {
         StartCoroutine(WaitForLoad());
+
     }
 
     private IEnumerator WaitForLoad()
@@ -148,6 +159,11 @@ public class DialogueManager : MonoBehaviour
         // Displays each character in the dialogue line at the specified typing speed
         while (_dialogueText.maxVisibleCharacters < dialogueLineCharLength)
         {
+            if (PauseMenuManager.Instance.IsPaused)
+            {
+                yield return new WaitUntil(() => !PauseMenuManager.Instance.IsPaused); // Avoid typing while the game is paused
+            }
+
             if (_completeCurrentSentence)
             {
                 _dialogueText.maxVisibleCharacters = dialogueLineCharLength;
