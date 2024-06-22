@@ -262,6 +262,10 @@ PrefabInstance:
       propertyPath: _volumeSlider
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7384745985085698042, guid: 16ac1931390a60f4dab32b9ec787546a, type: 3}
+      propertyPath: _volumeToggle
+      value: 
+      objectReference: {fileID: 1469554398}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -336,6 +340,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+--- !u!114 &1469554398 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3763196572846424069, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
+  m_PrefabInstance: {fileID: 1859603550316177401}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1682514915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -731,7 +746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1394130743480899420, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -489.99997
+      value: -490
       objectReference: {fileID: 0}
     - target: {fileID: 1878581333474609193, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_IsActive
@@ -1035,7 +1050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7389005598681718406, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -396.66666
+      value: -396.66663
       objectReference: {fileID: 0}
     - target: {fileID: 7741138241313348745, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_AnchorMax.x

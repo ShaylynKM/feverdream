@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - VolumeSlider
+  - DialogueManager
+  - TypingSFX
   layers:
   - Default
   - TransparentFX
