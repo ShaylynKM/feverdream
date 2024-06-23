@@ -12,7 +12,7 @@ public class TurnOffAnimations : MonoBehaviour
     private Toggle _animationsToggle;
 
     [SerializeField]
-    private bool _animationsAreEnabled;
+    private bool _animationsAreEnabled = true;
 
     private GameObject[] _animatedObjects;
 
@@ -34,17 +34,24 @@ public class TurnOffAnimations : MonoBehaviour
     {
         SceneManager.activeSceneChanged += OnActiveSceneChanged; // Subscribes our scene changing method to the callback event
 
+        _animationsAreEnabled = PlayerPrefs.GetInt("AnimationsEnabled", 1) == 1;
+
         OnToggleFound();
         FindAnimatedObjects();
         TurnAnimationsOnAndOff();
     }
     void OnActiveSceneChanged(Scene previous, Scene next)
     {
+        _animatedObjects = null; // Clearing the array in order to find new objects
         OnToggleFound();
         FindAnimatedObjects();
         TurnAnimationsOnAndOff();
     }
 
+    private void OnDestroy()
+    {
+        SceneManager.activeSceneChanged -= OnActiveSceneChanged; // Unsubscribes from the callback method when this object is destroyed
+    }
 
     private void OnToggleFound()
     {
@@ -53,10 +60,9 @@ public class TurnOffAnimations : MonoBehaviour
         // Makes sure we find the correct toggle before proceeding
         foreach (Toggle toggle in toggles)
         {
-            if (toggle.name == "AnimationsToggle")
+            if (toggle?.name == "AnimationsToggle")
             {
                 _animationsToggle = toggle;
-
                 break;
             }
         }
@@ -66,7 +72,7 @@ public class TurnOffAnimations : MonoBehaviour
             // Assigns the listener for the value changed
             _animationsToggle.onValueChanged.AddListener(delegate
             {
-                OnAnimationsToggle(!_animationsToggle.isOn);
+                OnAnimationsToggle(_animationsToggle.isOn);
             });
 
             _animationsToggle.isOn = _animationsAreEnabled; // Sets the toggle in the scene to on or off based on the current state
@@ -79,38 +85,63 @@ public class TurnOffAnimations : MonoBehaviour
 
     private void FindAnimatedObjects()
     {
-        if (_animatedObjects == null)
+        _animatedObjects = GameObject.FindGameObjectsWithTag("AnimatedObject");
+
+        if(_animatedObjects == null)
         {
-            _animatedObjects = GameObject.FindGameObjectsWithTag("AnimatedObject");
+            Debug.Log("Did not find any animated objects");
+        }
+        else
+        {
+            Debug.Log("Found animated objects");
         }
     }
 
+
     private void TurnAnimationsOnAndOff()
     {
+        if (_animatedObjects == null)
+        {
+            Debug.Log("No animated objects in array.");
+            return;
+        }
+
         Animator animator;
 
         // Get all the animated objects
-        foreach(GameObject animatedObject in _animatedObjects)
+        foreach (GameObject animatedObject in _animatedObjects)
         {
             animator = animatedObject.GetComponent<Animator>();
-            
-            if(_animationsAreEnabled == true)
+
+            if (animatedObject == null)
+            {
+                Debug.Log("The animated object is null.");
+                continue;
+            }
+
+            if (animator == null)
+            {
+                Debug.Log($"No Animator found on {animatedObject.name}");
+            }
+
+            if (_animationsAreEnabled == true)
             {
                 animator.enabled = true; // Enable the animations if the bool is true
             }
-            else if(_animationsAreEnabled == false)
+            else
             {
                 animator.enabled = false; // Disable the animations if the bool is false
             }
         }
+
     }
 
     public void OnAnimationsToggle(bool isAnimated)
     {
-        _animationsAreEnabled = !isAnimated;
+        _animationsAreEnabled = isAnimated;
 
         PlayerPrefs.SetInt("AnimationsOnOff", _animationsAreEnabled ? 1 : 0); // Saves the bool in PlayerPrefs as an Int, since PlayerPrefs doesn't natively support boolean values
+
+        TurnAnimationsOnAndOff();
     }
-
-
 }
