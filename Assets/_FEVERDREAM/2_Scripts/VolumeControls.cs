@@ -158,7 +158,7 @@ public class VolumeControls : MonoBehaviour
         }
         else
         {
-            Debug.Log("Toggle not found");
+            Debug.Log("Mute toggle not found");
         }
     }
 
