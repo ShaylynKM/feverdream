@@ -90,7 +90,6 @@ public class DialogueManager : MonoBehaviour
 
         _dialogueBoxButton.interactable = true; // resets the button
         StartDialogue(_dialogueInformation.lines);
-        Debug.Log("started dialogue");
     }
 
     public void StartDialogue(List<DialogueLine> dialogueLines)
@@ -100,7 +99,6 @@ public class DialogueManager : MonoBehaviour
         foreach (DialogueLine dialogueLine in dialogueLines)
         {
             _lines.Enqueue(dialogueLine);
-            Debug.Log("cued lines");
         }
 
         DisplayNextDialogueLine();
@@ -124,7 +122,6 @@ public class DialogueManager : MonoBehaviour
                 _dialogueBoxButton.interactable = false; // Keeps the player from clicking the button over and over
                 _choiceObject.SetActive(true);
             }
-            Debug.Log("no more lines");
             EndDialogue();
             return;
         }
@@ -205,18 +202,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (_nextSceneName != "") // If the string for the next scene is not left empty
         {
-            Debug.Log("load next scene");
             SceneManager.LoadScene(sceneName: _nextSceneName); // Loading by name in case I have to go back to certain scenes, such as in the case of a choice.
         }
-        else
-        {
-            Debug.Log("The game is over. Go home."); // Will fill this in when I have something to put at the end of the game.
-        }
-    }
-
-    public void MuteUnmute()
-    {
-
     }
 }
 

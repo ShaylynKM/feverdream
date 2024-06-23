@@ -91,10 +91,6 @@ public class TurnOffAnimations : MonoBehaviour
         {
             Debug.Log("Did not find any animated objects");
         }
-        else
-        {
-            Debug.Log("Found animated objects");
-        }
     }
 
 

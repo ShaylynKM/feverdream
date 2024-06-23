@@ -21,7 +21,6 @@ public class TurnOffPostProcessing : MonoBehaviour
 
         // This script goes on the main camera. Get the volume from it
         _ppVolume = GetComponent<PostProcessVolume>();
-        Debug.Log("got the pp");
 
         TurnPPOnAndOff();
     }
