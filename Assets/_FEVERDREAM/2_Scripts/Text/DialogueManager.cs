@@ -49,11 +49,13 @@ public class DialogueManager : MonoBehaviour
 
     private AudioSource _audioSource;
 
-    [SerializeField]
-    private AudioClip _normalSFX;
+    private DialogueSO _dialogueSO;
 
-    [SerializeField]
-    private AudioClip _doubtSFX;
+    //[SerializeField]
+    //private AudioClip _speakerVoice;
+
+    //[SerializeField]
+    //private AudioClip _doubtSFX;
 
     private void Awake()
     {
@@ -170,18 +172,10 @@ public class DialogueManager : MonoBehaviour
 
             _dialogueText.maxVisibleCharacters++; // Increase the amount of visible characters one by one
 
-            if (_audioSource.isPlaying == false)
+            if (_audioSource.isPlaying == false && dialogueLine.SpeakerVoice != null)
             {
-                if (_speakerNameText.text == "Doubt" || _speakerNameText.text == "Figure")
-                {
-                    _audioSource.clip = _doubtSFX;
-                    _audioSource.Play();
-                }
-                else
-                {
-                    _audioSource.clip = _normalSFX;
-                    _audioSource.Play();
-                }
+                _audioSource.clip = dialogueLine.SpeakerVoice; // Use the audio from the scriptable object
+                _audioSource.Play();
             }
             
 
@@ -212,6 +206,7 @@ public class DialogueLine
 {
     public SpeakerNameLabel Speaker;
     public string Line;
+    public AudioClip SpeakerVoice;
 }
 
 [System.Serializable]
