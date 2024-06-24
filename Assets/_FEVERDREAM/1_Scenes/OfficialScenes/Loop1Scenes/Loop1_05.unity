@@ -267,6 +267,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16ac1931390a60f4dab32b9ec787546a, type: 3}
+--- !u!1001 &1321910381
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3550928492753954967, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_Name
+      value: '[AnimationsManager]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.59348
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.148563
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 777.4382
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778758752933326387, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 13895e15fdaee8a4cad7c26a0c57ff44, type: 3}
 --- !u!1001 &1682514915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,6 +438,7 @@ GameObject:
   - component: {fileID: 1726142745}
   - component: {fileID: 1726142747}
   - component: {fileID: 1726142746}
+  - component: {fileID: 1726142748}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -555,6 +613,20 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1726142748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726142741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7359b70c1c937174fa02960e73898efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ppToggle: {fileID: 0}
+  _ppEnabled: 1
 --- !u!1 &1733221566 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6260831207498275121, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
@@ -897,6 +969,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6260831207498275121, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
+      propertyPath: m_TagString
+      value: AnimatedObject
+      objectReference: {fileID: 0}
     - target: {fileID: 6389776348581996622, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1144,3 +1220,4 @@ SceneRoots:
   - {fileID: 39499445}
   - {fileID: 1682514915}
   - {fileID: 1110839316}
+  - {fileID: 1321910381}

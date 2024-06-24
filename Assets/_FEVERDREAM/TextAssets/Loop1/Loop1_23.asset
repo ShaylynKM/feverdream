@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d843c00a958058429450e3d38e9b863, type: 3}
+  m_Name: Loop1_23
+  m_EditorClassIdentifier: 
+  lines:
+  - Speaker:
+      SpeakerName: Doubt
+    Line: Alright, that looks better.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: You can go inside now.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: I'm leaving.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: But I'm <b> always </b> here for you.
+  - Speaker:
+      SpeakerName: Doubt
+    Line: Remember that.

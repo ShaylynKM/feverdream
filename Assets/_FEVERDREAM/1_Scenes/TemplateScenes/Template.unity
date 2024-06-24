@@ -824,6 +824,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6260831207498275121, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
+      propertyPath: m_TagString
+      value: AnimatedObject
+      objectReference: {fileID: 0}
     - target: {fileID: 6389776348581996622, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
