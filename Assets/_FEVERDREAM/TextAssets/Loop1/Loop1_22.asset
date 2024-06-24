@@ -17,3 +17,4 @@ MonoBehaviour:
       SpeakerName: 
     Line: You march back in and wash your hands again, scrubbing with your nails
       and counting to sixty.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}

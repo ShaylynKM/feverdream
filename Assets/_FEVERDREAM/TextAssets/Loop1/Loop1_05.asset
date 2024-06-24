@@ -16,6 +16,8 @@ MonoBehaviour:
   - Speaker:
       SpeakerName: Figure
     Line: ...
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: 
     Line: It seems to lay dormant, like a landmine ready to go off.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}

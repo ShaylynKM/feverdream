@@ -16,22 +16,29 @@ MonoBehaviour:
   - Speaker:
       SpeakerName: Doubt
     Line: You can't see any worms, you say? That's the point.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: Are they there, or are they not there? You can never be too sure you're
       safe. Best to assume you aren't.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: What do they do? We don't know. That's the problem.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: These ones seem to have gotten you sick.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: That's why I can't let you see your parents until you clean up.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: You want to see them, right? Then go. Wash.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: I'll be waiting.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}

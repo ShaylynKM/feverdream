@@ -201,11 +201,6 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
---- !u!82 &454191996 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3932250042648618879, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
-  m_PrefabInstance: {fileID: 1137491330}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1110839316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -338,12 +333,17 @@ PrefabInstance:
     - target: {fileID: 6497676054549555201, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
       propertyPath: _music
       value: 
-      objectReference: {fileID: 454191996}
+      objectReference: {fileID: 1137491331}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+--- !u!82 &1137491331 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2069401954452991955, guid: 32c9158e2ae61a1499d601d21d40d598, type: 3}
+  m_PrefabInstance: {fileID: 1137491330}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1469554398 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3763196572846424069, guid: ced98ed318b92d642b17b078df687cc8, type: 3}

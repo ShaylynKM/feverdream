@@ -16,13 +16,13 @@ MonoBehaviour:
   - Speaker:
       SpeakerName: ' '
     Line: You wake up in your bedroom.
-    SpeakerVoice: {fileID: 0}
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   - Speaker:
       SpeakerName: ' '
     Line: Your entire body feels stiff and sore. Your throat burns and your head
       feels like it's going to explode.
-    SpeakerVoice: {fileID: 0}
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   - Speaker:
       SpeakerName: ' '
     Line: You must have a fever. Your parents will know what to do.
-    SpeakerVoice: {fileID: 0}
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}

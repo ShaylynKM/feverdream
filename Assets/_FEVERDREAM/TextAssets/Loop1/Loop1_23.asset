@@ -16,15 +16,20 @@ MonoBehaviour:
   - Speaker:
       SpeakerName: Doubt
     Line: Alright, that looks better.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: You can go inside now.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: I'm leaving.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: But I'm <b> always </b> here for you.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: Remember that.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}

@@ -16,6 +16,8 @@ MonoBehaviour:
   - Speaker:
       SpeakerName: ' '
     Line: You wake up in your bedroom.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   - Speaker:
       SpeakerName: ' '
     Line: What a strange dream.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}

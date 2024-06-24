@@ -16,3 +16,4 @@ MonoBehaviour:
   - Speaker:
       SpeakerName: 
     Line: You wash your hands again, scrubbing with your nails this time.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}

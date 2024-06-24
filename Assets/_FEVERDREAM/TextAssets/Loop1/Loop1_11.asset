@@ -17,12 +17,16 @@ MonoBehaviour:
       SpeakerName: Doubt
     Line: You're usually excellent about staying safe, but this week has been an
       exception.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: I have no choice but to escalate my involvement in your life.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: The worms are multiplying.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
   - Speaker:
       SpeakerName: Doubt
     Line: You slipped up and we need to fix this.
+    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
