@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d843c00a958058429450e3d38e9b863, type: 3}
-  m_Name: Loop2_1
+  m_Name: Loop2_12
   m_EditorClassIdentifier: 
   lines:
   - Speaker:
-      SpeakerName: ' '
-    Line: You wake up in your bedroom.
+      SpeakerName: 
+    Line: You should be able to wake up your parents, now.
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   - Speaker:
-      SpeakerName: ' '
-    Line: What a strange dream.
+      SpeakerName: 
+    Line: You reach for the doorknob, but
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d843c00a958058429450e3d38e9b863, type: 3}
+  m_Name: Loop2_06
+  m_EditorClassIdentifier: 
+  lines:
+  - Speaker:
+      SpeakerName: 
+    Line: Doubt must not have been kidding. There ARE worms on your hands.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: A single one, the size of one of your fingers, squirms and pulsates rhythmically
+      in time with your heartbeat.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You feel so validated. You aren't crazy.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You always knew something was there and nobody would believe you.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You don't think about this for long before you realize how dizzy you are.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You still have a fever.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
