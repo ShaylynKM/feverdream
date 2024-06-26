@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,7 +26,6 @@ public class MainMenuManager : MonoBehaviour
         _settingsMenu.SetActive(false);
         _newGameMenu.SetActive(false);
         _quitGameMenu.SetActive(false);
-
     }
 
     public void OnNewGameButton()

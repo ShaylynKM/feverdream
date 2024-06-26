@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d843c00a958058429450e3d38e9b863, type: 3}
+  m_Name: Poetry1_01
+  m_EditorClassIdentifier: 
+  lines:
+  - Speaker:
+      SpeakerName: 
+    Line: Do you remember when you discovered
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: that your skin
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: your clothes
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: every surface your little hands touched
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: was a vehicle for unstoppable evil?
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: Not the exact moment
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: but a swelling timeframe
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: festering, growing,
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: like a virus no one else could catch
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: even if you wanted them to
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}

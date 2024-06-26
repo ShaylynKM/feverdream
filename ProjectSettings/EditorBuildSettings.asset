@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/MainMenu.unity
     guid: 6d183276bf0840d489e5dcf186f8f967
   - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/PoetryScene1/Poetry1_01.unity
+    guid: 85b2b733e85002a40af0575c0828d819
+  - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/PoetryScene1/Poetry1_02.unity
+    guid: 5bd52cc1d64ee684786bac6df6c67a92
+  - enabled: 1
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop1Scenes/Loop1_01.unity
     guid: 18df363f144ce75479299077e3575863
   - enabled: 1
