@@ -7,6 +7,8 @@ public class MusicManager : MonoBehaviour
     [SerializeField]
     private AudioSource _music;
 
+    [SerializeField] bool playOnStart;
+
     private void Awake()
     {
         if (Instance == null)
@@ -22,21 +24,44 @@ public class MusicManager : MonoBehaviour
 
             // Set this as the new instance
             Instance = this;
+            if(_music == null)
+                _music = GetComponentInChildren<AudioSource>();
             DontDestroyOnLoad(this.gameObject);
         }
     }
 
     private void Start()
     {
-        if (_music != null && !_music.isPlaying)
+        if (_music != null && playOnStart)
         {
             PlayMusic();
         }
     }
-
+    public void PlayMusic(AudioData audioData)
+    {
+        if (!audioData.isPlaying)
+        {
+            StopMusic();
+            return;
+        }
+        if (audioData.audioFile == _music.clip || audioData.audioFile == null)
+            return;
+        _music.clip = audioData.audioFile;
+        _music.loop = audioData.isLooping;
+        _music.volume = audioData.volume;
+        _music.priority = audioData.priority;
+        PlayMusic();
+    }
     public void PlayMusic()
     {
-        _music.Play(); // For bgm
+        
+        if(_music)
+            _music.Play(); // For bgm
 
+    }
+    public void StopMusic()
+    {
+        if (_music.isPlaying)
+            _music.Stop();
     }
 }

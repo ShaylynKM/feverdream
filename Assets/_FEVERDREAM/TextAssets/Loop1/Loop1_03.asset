@@ -17,3 +17,9 @@ MonoBehaviour:
       SpeakerName: 
     Line: You look as awful as you feel.
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  audioData:
+    volume: 1
+    priority: 128
+    audioFile: {fileID: 8300000, guid: 9d97bbec1ef737d4891f7ae9d98798a0, type: 3}
+    isLooping: 1
+    isPlaying: 1

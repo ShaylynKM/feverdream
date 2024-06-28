@@ -49,7 +49,7 @@ public class DialogueManager : MonoBehaviour
 
     private AudioSource _audioSource;
 
-    private DialogueSO _dialogueSO;
+
 
     //[SerializeField]
     //private AudioClip _speakerVoice;
@@ -79,6 +79,7 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(WaitForLoad());
+        MusicManager.Instance.PlayMusic(_dialogueInformation.audioData);
 
     }
 
@@ -96,6 +97,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(List<DialogueLine> dialogueLines)
     {
+       
         _lines.Clear(); // Empties the queue
 
         foreach (DialogueLine dialogueLine in dialogueLines)
