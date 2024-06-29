@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using BayatGames;
+using BayatGames.SaveGameFree;
+using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour
 {
@@ -25,6 +28,11 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject _settingsMenu;
 
+    private string _savedScene;
+
+    [SerializeField]
+    private GameObject _loadButtonObject;
+
     public bool IsPaused { get; private set; }
 
     private void Awake()
@@ -47,6 +55,14 @@ public class PauseMenuManager : MonoBehaviour
         {
             Destroy(gameObject);
             return;
+        }
+
+        if(_savedScene == null)
+        {
+            Button button;
+            button = _loadButtonObject.GetComponent<Button>();
+            Debug.Log("found button");
+            button.interactable = false;
         }
     }
 
@@ -89,10 +105,25 @@ public class PauseMenuManager : MonoBehaviour
         _pauseMenu.SetActive(false);
     }
 
+    public void OnYesSave()
+    {
+        // Saves this scene
+        _savedScene = SceneManager.GetActiveScene().name; 
+        SaveGame.Save<string>("_savedScene", _savedScene);
+    }    
+
     public void OnLoad()
     {
         _loadPanel.SetActive(true);
         _pauseMenu.SetActive(false);
+    }
+
+    public void OnYesLoad()
+    {
+        if(_savedScene != null)
+        {
+            SceneManager.LoadScene(_savedScene); // Loads the last saved scene
+        }
     }
 
     public void OnSettings()
