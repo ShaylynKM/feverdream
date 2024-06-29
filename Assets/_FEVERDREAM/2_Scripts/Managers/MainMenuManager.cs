@@ -25,11 +25,10 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private Button _continueButton;
 
+    [SerializeField]
+    private GameObject _warningText;
+
     private string _savedScene;
-
-    //[SerializeField]
-    //private bool _testClear; // For checking if data gets cleared properly
-
 
     private void Awake()
     {
@@ -50,32 +49,19 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
-
-    //void testsave()
-    //{
-    //    if (_testClear == true)
-    //    {
-    //        if (_savedScene != null)
-    //        {
-    //            SaveManager.ClearSave();
-    //            _testClear = false;
-    //            _continueButton.interactable = false;
-    //            return;
-    //        }
-    //        else
-    //        {
-    //            return;
-    //        }
-    //    }
-    //}
-
     public void OnNewGameButton()
     {
         _newGameMenu.SetActive(true);
+
+        if(_savedScene != null)
+        {
+            _warningText.SetActive(true);
+        }
     }
 
     public void OnNewGameStart()
     {
+        SaveManager.ClearSave();
         SceneManager.LoadScene(_firstSceneIndex); // Loads the specified scene
     }
 

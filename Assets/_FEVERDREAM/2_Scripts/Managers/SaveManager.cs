@@ -38,7 +38,6 @@ public class SaveManager
         }
     }
 
-    // Used for testing purposes
     public static void ClearSave()
     {
         if(File.Exists(saveGamePath))
