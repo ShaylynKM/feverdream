@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour
 {
@@ -25,19 +26,15 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject _settingsMenu;
 
+    [SerializeField]
+    private Button _loadButton;
+
+    private string _savedScene;
+
     public bool IsPaused { get; private set; }
 
     private void Awake()
     {
-        _pauseMenu.SetActive(false);
-        _quitMainMenu.SetActive(false);
-        _savePanel.SetActive(false);
-        _savedPanel.SetActive(false);
-        _loadPanel.SetActive(false);
-        _settingsMenu.SetActive(false);
-
-        IsPaused = false;
-
         if (Instance == null)
         {
             Instance = this;
@@ -47,6 +44,27 @@ public class PauseMenuManager : MonoBehaviour
         {
             Destroy(gameObject);
             return;
+        }
+
+        _pauseMenu.SetActive(false);
+        _quitMainMenu.SetActive(false);
+        _savePanel.SetActive(false);
+        _savedPanel.SetActive(false);
+        _loadPanel.SetActive(false);
+        _settingsMenu.SetActive(false);
+
+        IsPaused = false;
+
+        // Checking to see if there's save data
+        SaveData data = SaveManager.OnLoadGame();
+        if(data != null)
+        {
+            _savedScene = data.SavedScene;
+            _loadButton.interactable = true; // If save data exists, enable the load button
+        }
+        else
+        {
+            _loadButton.interactable = false; // If there is no saved data, disable the load button
         }
     }
 
@@ -83,16 +101,41 @@ public class PauseMenuManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    // Pressing the save button
     public void OnSave()
     {
         _savePanel.SetActive(true);
         _pauseMenu.SetActive(false);
     }
 
+    // Selecting "yes" to save
+    public void OnYesSave()
+    {
+        _savedScene = SceneManager.GetActiveScene().name; // Gets our active scene
+        SaveManager.OnSave(_savedScene); // Assigns active scene as the saved scene
+        Debug.Log("saved scene" + _savedScene);
+        _savedPanel.SetActive(true); // Opens the "saved" message
+    }
+
+    // Pressing the load button
     public void OnLoad()
     {
         _loadPanel.SetActive(true);
         _pauseMenu.SetActive(false);
+    }
+
+    // Selecting "yes" to load
+    public void OnYesLoad()
+    {
+        if (_savedScene != null)
+        {
+            Time.timeScale = 1f;
+            IsPaused = false; // Unpause the game before the scene changes to avoid weird behaviour
+
+            Debug.Log("loading scene" + _savedScene);
+
+            SceneManager.LoadScene(_savedScene); // Loads the currently saved scene
+        }
     }
 
     public void OnSettings()

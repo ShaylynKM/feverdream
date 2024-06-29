@@ -291,7 +291,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 138a2b28cf7149540a2dfe1fc88f64f7, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -305,7 +305,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1110113180}
         m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
-        m_MethodName: OnLoadGame
+        m_MethodName: OnContinue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -413,6 +413,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5951833779741415420, guid: 9ca84b51cabe7fb408df938e037fe814, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
     - target: {fileID: 5951833779741415420, guid: 9ca84b51cabe7fb408df938e037fe814, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -774,7 +778,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 138a2b28cf7149540a2dfe1fc88f64f7, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -845,6 +849,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1903666803}
     m_Modifications:
     - target: {fileID: 5258557212099127592, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
+    - target: {fileID: 5258557212099127592, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1110113180}
@@ -856,6 +864,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MainMenuManager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5299431396820536469, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
     - target: {fileID: 5299431396820536469, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -870,7 +882,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5645514948906685657, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
       propertyPath: m_text
-      value: Start new game? If you have save data, it will be erased.
+      value: "Start new game? \n\n(If you have save data, it will be overwritten
+        next time you save.)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5645514948906685657, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
+      propertyPath: m_margin.w
+      value: -89.09152
+      objectReference: {fileID: 0}
+    - target: {fileID: 5645514948906685657, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
+      propertyPath: m_margin.y
+      value: -21.777763
       objectReference: {fileID: 0}
     - target: {fileID: 5868782774663680334, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
       propertyPath: m_Name
@@ -1247,6 +1268,7 @@ MonoBehaviour:
   _settingsMenu: {fileID: 213834252}
   _newGameMenu: {fileID: 1098060146}
   _quitGameMenu: {fileID: 1463669852}
+  _continueButton: {fileID: 87371338}
 --- !u!1 &1167078407
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,7 +1808,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 138a2b28cf7149540a2dfe1fc88f64f7, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1976,7 +1998,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
     m_PressedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
     m_SelectedSprite: {fileID: 21300000, guid: 8ad35476ce08a1f47be4209531619f6a, type: 3}
-    m_DisabledSprite: {fileID: 21300000, guid: 138a2b28cf7149540a2dfe1fc88f64f7, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2530,6 +2552,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 2058106281}
     m_Modifications:
     - target: {fileID: 5258557212099127592, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
+    - target: {fileID: 5258557212099127592, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1110113180}
@@ -2541,6 +2567,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MainMenuManager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5299431396820536469, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1b9423edeefb3d847a01912fcbdbcd8e, type: 3}
     - target: {fileID: 5299431396820536469, guid: 9390aeb77c61ef941a4d68adb03b834f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

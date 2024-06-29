@@ -17,3 +17,9 @@ MonoBehaviour:
       SpeakerName: Doubt
     Line: I am Doubt.
     SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
+  audioData:
+    volume: 0
+    priority: 0
+    audioFile: {fileID: 8300000, guid: 9d97bbec1ef737d4891f7ae9d98798a0, type: 3}
+    isLooping: 1
+    isPlaying: 1

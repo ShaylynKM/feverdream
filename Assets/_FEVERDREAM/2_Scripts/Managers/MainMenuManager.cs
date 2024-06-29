@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -21,12 +22,52 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject _quitGameMenu;
 
+    [SerializeField]
+    private Button _continueButton;
+
+    private string _savedScene;
+
+    //[SerializeField]
+    //private bool _testClear; // For checking if data gets cleared properly
+
+
     private void Awake()
     {
         _settingsMenu.SetActive(false);
         _newGameMenu.SetActive(false);
         _quitGameMenu.SetActive(false);
+
+        // Checking to see if there's save data
+        SaveData data = SaveManager.OnLoadGame();
+        if (data != null)
+        {
+            _savedScene = data.SavedScene;
+            _continueButton.interactable = true; // If save data exists, enable the continue button
+        }
+        else
+        {
+            _continueButton.interactable = false; // If there is no saved data, disable the continue button
+        }
     }
+
+
+    //void testsave()
+    //{
+    //    if (_testClear == true)
+    //    {
+    //        if (_savedScene != null)
+    //        {
+    //            SaveManager.ClearSave();
+    //            _testClear = false;
+    //            _continueButton.interactable = false;
+    //            return;
+    //        }
+    //        else
+    //        {
+    //            return;
+    //        }
+    //    }
+    //}
 
     public void OnNewGameButton()
     {
@@ -40,7 +81,12 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnContinue()
     {
-        Debug.Log("load game");
+        if (_savedScene != null)
+        {
+            Debug.Log("loading scene" + _savedScene);
+
+            SceneManager.LoadScene(_savedScene); // Loads the currently saved scene
+        }
     }
 
     public void OnSettings()
