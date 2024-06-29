@@ -8,7 +8,6 @@ TagManager:
   - DialogueManager
   - TypingSFX
   - AnimatedObject
-  - LoadButton
   layers:
   - Default
   - TransparentFX
