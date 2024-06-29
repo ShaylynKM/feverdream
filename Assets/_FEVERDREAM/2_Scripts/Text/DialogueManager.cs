@@ -49,14 +49,6 @@ public class DialogueManager : MonoBehaviour
 
     private AudioSource _audioSource;
 
-
-
-    //[SerializeField]
-    //private AudioClip _speakerVoice;
-
-    //[SerializeField]
-    //private AudioClip _doubtSFX;
-
     private void Awake()
     {
         _lines = new Queue<DialogueLine>(); // Initializes the queue
