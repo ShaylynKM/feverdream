@@ -15,7 +15,8 @@ MonoBehaviour:
   lines:
   - Speaker:
       SpeakerName: 
-    Line: Doubt must not have been kidding. There ARE worms on your hands.
+    Line: Doubt must have been real, somehow, and he must not have been kidding.
+      There ARE worms on your hands.
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   - Speaker:
       SpeakerName: 
@@ -38,3 +39,9 @@ MonoBehaviour:
       SpeakerName: 
     Line: You still have a fever.
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  audioData:
+    volume: 0
+    priority: 0
+    audioFile: {fileID: 0}
+    isLooping: 0
+    isPlaying: 0

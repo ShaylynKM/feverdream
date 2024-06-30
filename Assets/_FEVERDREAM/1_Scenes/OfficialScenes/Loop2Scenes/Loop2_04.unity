@@ -295,7 +295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3401010270430608670, guid: e32367f4a9816724fb92ad078ee1e005, type: 3}
       propertyPath: _choiceScene
-      value: Loop2_04
+      value: Loop2_05
       objectReference: {fileID: 0}
     - target: {fileID: 7619086200523128756, guid: e32367f4a9816724fb92ad078ee1e005, type: 3}
       propertyPath: m_Name

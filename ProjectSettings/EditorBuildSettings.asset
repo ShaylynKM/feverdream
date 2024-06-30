@@ -122,7 +122,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop2Scenes/Loop2_12.unity
     guid: 51ae06f351a88f84b833e003c236a505
-  - enabled: 1
-    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop2Scenes/Loop2_13.unity
-    guid: 8901fdf7b0700f44899da90101bcfe44
   m_configObjects: {}

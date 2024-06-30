@@ -15,5 +15,11 @@ MonoBehaviour:
   lines:
   - Speaker:
       SpeakerName: 
-    Line: Just tall enough to reach.
+    Line: Just tall enough to reach without a stool.
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  audioData:
+    volume: 0
+    priority: 0
+    audioFile: {fileID: 0}
+    isLooping: 0
+    isPlaying: 0
