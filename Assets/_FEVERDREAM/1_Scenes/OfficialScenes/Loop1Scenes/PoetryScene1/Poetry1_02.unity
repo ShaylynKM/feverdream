@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99eecf82f36f39745b8558649fd341ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitionTime: 3
+  _transitionTime: 2
   _nextSceneName: Loop1_01
 --- !u!114 &1101865432 stripped
 MonoBehaviour:

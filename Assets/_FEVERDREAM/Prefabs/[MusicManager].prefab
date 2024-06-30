@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _music: {fileID: 0}
+  playOnStart: 0
 --- !u!1001 &2945311145112223560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57,6 +58,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2250060871532224536}
     m_Modifications:
+    - target: {fileID: 896344396685901074, guid: db08d85d624f2c7449329036b94fab21, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 00d7f2565e63da44da858ec73c801a2b, type: 2}
     - target: {fileID: 6350323320763807592, guid: db08d85d624f2c7449329036b94fab21, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -119,6 +124,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2250060871532224536}
     m_Modifications:
+    - target: {fileID: 5484904147790910555, guid: a2d96e7c93e7227428078821c339fb7a, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 00d7f2565e63da44da858ec73c801a2b, type: 2}
     - target: {fileID: 7709900451899914674, guid: a2d96e7c93e7227428078821c339fb7a, type: 3}
       propertyPath: m_Name
       value: DoubtBGM
@@ -181,6 +190,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2250060871532224536}
     m_Modifications:
+    - target: {fileID: 3227973024349869909, guid: 0e9b773610db70748ad24fe401cb786f, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 00d7f2565e63da44da858ec73c801a2b, type: 2}
     - target: {fileID: 4891697272019765731, guid: 0e9b773610db70748ad24fe401cb786f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -243,6 +256,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2250060871532224536}
     m_Modifications:
+    - target: {fileID: -1700985081582382857, guid: 377644422faa7b548aaf6dc2b9f58d39, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 00d7f2565e63da44da858ec73c801a2b, type: 2}
     - target: {fileID: 813156302339674667, guid: 377644422faa7b548aaf6dc2b9f58d39, type: 3}
       propertyPath: m_Name
       value: BedroomBGM

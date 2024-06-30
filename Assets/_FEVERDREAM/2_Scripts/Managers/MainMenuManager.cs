@@ -28,6 +28,9 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject _warningText;
 
+    [SerializeField]
+    private GameObject _loadingScreen;
+
     private string _savedScene;
 
     private void Awake()
@@ -35,6 +38,7 @@ public class MainMenuManager : MonoBehaviour
         _settingsMenu.SetActive(false);
         _newGameMenu.SetActive(false);
         _quitGameMenu.SetActive(false);
+        _loadingScreen.SetActive(false);
 
         // Checking to see if there's save data
         SaveData data = SaveManager.OnLoadGame();
@@ -62,7 +66,7 @@ public class MainMenuManager : MonoBehaviour
     public void OnNewGameStart()
     {
         SaveManager.ClearSave();
-        SceneManager.LoadScene(_firstSceneIndex); // Loads the specified scene
+        StartCoroutine(LoadSceneAsync(_firstSceneIndex));
     }
 
     public void OnContinue()
@@ -71,7 +75,7 @@ public class MainMenuManager : MonoBehaviour
         {
             Debug.Log("loading scene" + _savedScene);
 
-            SceneManager.LoadScene(_savedScene); // Loads the currently saved scene
+            StartCoroutine(LoadSceneAsync(_savedScene));
         }
     }
 
@@ -103,4 +107,28 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    // For asynchronous loading
+    IEnumerator LoadSceneAsync(string sceneName)
+    {
+        // Load by scene name
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+
+        _loadingScreen.SetActive(true);
+
+        yield return null;
+    }
+
+    IEnumerator LoadSceneAsync(int sceneID)
+    {
+        // Load by scene index
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);
+
+        _loadingScreen.SetActive(true);
+
+        Debug.Log("Async load");
+
+        yield return null;
+    }
 }
