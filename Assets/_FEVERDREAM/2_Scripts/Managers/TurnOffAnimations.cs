@@ -136,7 +136,7 @@ public class TurnOffAnimations : MonoBehaviour
     {
         _animationsAreEnabled = isAnimated;
 
-        PlayerPrefs.SetInt("AnimationsOnOff", _animationsAreEnabled ? 1 : 0); // Saves the bool in PlayerPrefs as an Int, since PlayerPrefs doesn't natively support boolean values
+        PlayerPrefs.SetInt("AnimationsEnabled", _animationsAreEnabled ? 1 : 0); // Saves the bool in PlayerPrefs as an Int, since PlayerPrefs doesn't natively support boolean values
 
         TurnAnimationsOnAndOff();
     }
