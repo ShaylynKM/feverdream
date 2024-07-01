@@ -376,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 1859603550316177403}
     - target: {fileID: 3642045499837346684, guid: b976bd073f6635145afdeaa02e5ea585, type: 3}
       propertyPath: _nextSceneName
-      value: Poetry2_01
+      value: Loop4_05b
       objectReference: {fileID: 0}
     - target: {fileID: 3642045499837346684, guid: b976bd073f6635145afdeaa02e5ea585, type: 3}
       propertyPath: _speakerNameText
@@ -389,7 +389,7 @@ PrefabInstance:
     - target: {fileID: 3642045499837346684, guid: b976bd073f6635145afdeaa02e5ea585, type: 3}
       propertyPath: _dialogueInformation
       value: 
-      objectReference: {fileID: 11400000, guid: af4b35eee86cf824cb29085f6875a3be, type: 2}
+      objectReference: {fileID: 11400000, guid: 5d99d9a53a7790148a8b635abdcb878e, type: 2}
     - target: {fileID: 4405896637974795575, guid: b976bd073f6635145afdeaa02e5ea585, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 962e85426e745cd4f8b1aa3c54a52ca1, type: 2}
+  sharedProfile: {fileID: 11400000, guid: f72272b16be1a104d858e21e39e5cbee, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -664,7 +664,7 @@ Animator:
   m_GameObject: {fileID: 1733221566}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ca251b908a3711b45a2dafd56e5cc9c2, type: 2}
+  m_Controller: {fileID: 9100000, guid: ed0f45f556a7fab4a81c24ae07c8be69, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -824,10 +824,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2017533981321279432, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
-      propertyPath: m_Colors.m_NormalColor.a
-      value: 0.92941177
-      objectReference: {fileID: 0}
-    - target: {fileID: 2017533981321279432, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1682514916}
@@ -882,7 +878,7 @@ PrefabInstance:
     - target: {fileID: 2966316011094841179, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: de4458db064881d4686fb901518e8a43, type: 3}
+      objectReference: {fileID: 21300000, guid: 6d67ad4b8a4fa464bae766e248609ac8, type: 3}
     - target: {fileID: 2966316011094841179, guid: ced98ed318b92d642b17b078df687cc8, type: 3}
       propertyPath: m_Color.b
       value: 1

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d843c00a958058429450e3d38e9b863, type: 3}
+  m_Name: Loop4_05a
+  m_EditorClassIdentifier: 
+  lines:
+  - Speaker:
+      SpeakerName: 
+    Line: Before you can get a full word out, the pain hits you.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You feel like you've swallowed glass shards, your entire esophagus lacerated
+      until the pain reaches the pit of your stomach.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You choke silently, gripping at the wall.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: As you finally get the strength to cough, something falls out of your mouth.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You look into your hand. An entire pile of worms is wriggling there.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You can't stop. They keep coming.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: You don't know how to stop. You don't know how to stop. You don't know
+      how to stop. You don't know how to stop. You don't know how to stop. You don't
+      know how to stop. You don't know how to stop. You don't know how to stop. You
+      don't know how to stop. You don't know how to stop. You don't know how to stop.
+      You don't know how to stop. You don't know how to stop.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  audioData:
+    volume: 0
+    priority: 0
+    audioFile: {fileID: 0}
+    isLooping: 0
+    isPlaying: 0

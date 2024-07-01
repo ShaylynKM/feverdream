@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d843c00a958058429450e3d38e9b863, type: 3}
+  m_Name: Poetry2_01
+  m_EditorClassIdentifier: 
+  lines:
+  - Speaker:
+      SpeakerName: 
+    Line: Do you remember loved ones
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: taking your fragile hand into theirs
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: and commenting on the sandpaper texture
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: and the streaks of blood?
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: The way new cracks would form
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: in a gunshot of pain
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: when you flexed your tiny fingers?
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: Do you remember your family's suspicions
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: that something might be wrong?
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: Do you remember wanting to hide
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  - Speaker:
+      SpeakerName: 
+    Line: because you wanted to be better?
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+  audioData:
+    volume: 0
+    priority: 0
+    audioFile: {fileID: 0}
+    isLooping: 0
+    isPlaying: 0
