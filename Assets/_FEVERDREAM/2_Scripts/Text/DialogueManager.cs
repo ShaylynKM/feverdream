@@ -198,6 +198,11 @@ public class DialogueManager : MonoBehaviour
             }
 
             currentIndex++; // Continues to increment characters, even if they aren't being revealed (in the case of a format tag)
+
+            if(currentIndex >= dialogueLineCharLength)
+            {
+                break; // Prevents index going out of bounds
+            }
         }
 
         _isTyping = false;// Indicates that typing is complete.
