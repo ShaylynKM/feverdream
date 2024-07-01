@@ -189,6 +189,9 @@ EditorBuildSettings:
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop4Scenes/Loop4_05.unity
     guid: f22e513a392b522449b9678df9582bc2
   - enabled: 1
+    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop4Scenes/Loop4_05_transition.unity
+    guid: 61aaacc00bf43ed4aa21fbb7e0a5db26
+  - enabled: 1
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop4Scenes/Loop4_05a.unity
     guid: c6cef25758dc1924dbde6d57af8bc203
   - enabled: 1

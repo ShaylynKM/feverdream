@@ -44,7 +44,10 @@ MonoBehaviour:
       how to stop. You don't know how to stop. You don't know how to stop. You don't
       know how to stop. You don't know how to stop. You don't know how to stop. You
       don't know how to stop. You don't know how to stop. You don't know how to stop.
-      You don't know how to stop. You don't know how to stop.
+      You don't know how to stop. You don't know how to stop. You don't know how
+      to stop. You don't know how to stop. You don't know how to stop. You don't
+      know how to stop. You don't know how to stop. You don't know how to stop. You
+      don't know how to stop.
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   audioData:
     volume: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   lines:
   - Speaker:
       SpeakerName: 
-    Line: You step into the hallway. Your parents' door is open.
+    Line: You step into the hallway. Faint voices come from your parents' room.
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   audioData:
     volume: 0
