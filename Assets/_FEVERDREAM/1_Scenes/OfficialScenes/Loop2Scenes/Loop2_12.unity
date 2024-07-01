@@ -376,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 1859603550316177403}
     - target: {fileID: 3642045499837346684, guid: b976bd073f6635145afdeaa02e5ea585, type: 3}
       propertyPath: _nextSceneName
-      value: 
+      value: Loop3_01
       objectReference: {fileID: 0}
     - target: {fileID: 3642045499837346684, guid: b976bd073f6635145afdeaa02e5ea585, type: 3}
       propertyPath: _speakerNameText

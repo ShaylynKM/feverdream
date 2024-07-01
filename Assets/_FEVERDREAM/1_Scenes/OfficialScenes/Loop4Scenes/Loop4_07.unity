@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitionTime: 2
-  _nextSceneName: 
+  _nextSceneName: Loop5_01
 --- !u!4 &1253290240
 Transform:
   m_ObjectHideFlags: 0
