@@ -49,6 +49,8 @@ public class DialogueManager : MonoBehaviour
 
     private AudioSource _audioSource;
 
+    private bool _insideFormatTag = false; // For making sure the text sounds don't play for format tags
+
     private void Awake()
     {
         _lines = new Queue<DialogueLine>(); // Initializes the queue
@@ -149,6 +151,9 @@ public class DialogueManager : MonoBehaviour
 
         _completeCurrentSentence = false;
 
+        int currentIndex = 0; // The index of the character we are currently typing
+
+
         // Displays each character in the dialogue line at the specified typing speed
         while (_dialogueText.maxVisibleCharacters < dialogueLineCharLength)
         {
@@ -164,16 +169,35 @@ public class DialogueManager : MonoBehaviour
                 break;
             }
 
-            _dialogueText.maxVisibleCharacters++; // Increase the amount of visible characters one by one
+            char currentTypedCharacter = fullText[currentIndex]; // Which character is about to be revealed
 
-            if (_audioSource.isPlaying == false && dialogueLine.SpeakerVoice != null)
+            // Checks to see if we are currently inside a format tag (used to keep the text sound from playing for characters that are not visually revealed
+            if(currentTypedCharacter == '<')
             {
-                _audioSource.clip = dialogueLine.SpeakerVoice; // Use the audio from the scriptable object
-                _audioSource.Play();
+                _insideFormatTag = true;
             }
-            
+            else if(currentTypedCharacter == '>')
+            {
+                _insideFormatTag = false;
+            }
 
-            yield return new WaitForSecondsRealtime(_typingSpeed);
+            if(_insideFormatTag == false)
+            {
+                _dialogueText.maxVisibleCharacters++; // Increase the amount of visible characters one by one (only if they are not part of a format tag)
+
+                if (_audioSource.isPlaying == false && dialogueLine.SpeakerVoice != null)
+                {
+                    _audioSource.clip = dialogueLine.SpeakerVoice; // Use the audio from the scriptable object
+                    _audioSource.Play();
+                }
+                yield return new WaitForSecondsRealtime(_typingSpeed);
+            }
+            else
+            {
+                yield return null;
+            }
+
+            currentIndex++; // Continues to increment characters, even if they aren't being revealed (in the case of a format tag)
         }
 
         _isTyping = false;// Indicates that typing is complete.
