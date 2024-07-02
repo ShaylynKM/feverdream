@@ -22,11 +22,13 @@ MonoBehaviour:
       going to get inside They're going to get inside They're going to get inside
       They're going to get inside They're going to get inside They're going to get
       inside They're going to get inside They're going to get inside They're going
-      to get inside They're going to get inside
+      to get inside They're going to get inside They're going to get inside They're
+      going to get inside They're going to get inside They're going to get inside
+      They're going to get inside They're going to get inside
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   audioData:
-    volume: 0
-    priority: 0
-    audioFile: {fileID: 0}
-    isLooping: 0
-    isPlaying: 0
+    volume: 1
+    priority: 128
+    audioFile: {fileID: 8300000, guid: 9cee226084894f840a2d5ee846cfe245, type: 3}
+    isLooping: 1
+    isPlaying: 1

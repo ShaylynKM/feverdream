@@ -729,6 +729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _transitionTime: 1
   _nextSceneName: Loop5_14
+  _transitionScreen: {fileID: 0}
 --- !u!4 &1922301624
 Transform:
   m_ObjectHideFlags: 0
