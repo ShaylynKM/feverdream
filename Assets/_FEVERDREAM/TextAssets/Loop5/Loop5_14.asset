@@ -15,12 +15,14 @@ MonoBehaviour:
   lines:
   - Speaker:
       SpeakerName: 
-    Line: No. Nonono.
-    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
-  - Speaker:
-      SpeakerName: 
-    Line: They're going to get inside. The worms are going to get inside. They're
-      going to get
+    Line: No. Nonono. They're going to get inside. The worms are going to get inside.
+      They're going to get inside They're going to get inside They're going to get
+      inside They're going to get insideThey're going to get inside They're going
+      to get inside They're going to get inside They're going to get inside They're
+      going to get inside They're going to get inside They're going to get inside
+      They're going to get inside They're going to get inside They're going to get
+      inside They're going to get inside They're going to get inside They're going
+      to get inside They're going to get inside
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   audioData:
     volume: 0

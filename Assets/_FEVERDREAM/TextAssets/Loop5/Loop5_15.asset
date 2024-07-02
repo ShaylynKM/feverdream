@@ -15,12 +15,21 @@ MonoBehaviour:
   lines:
   - Speaker:
       SpeakerName: 
-    Line: You wake up in your bedroom.
-    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
-  - Speaker:
-      SpeakerName: 
-    Line: Next to you is a mirror.
-    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
+    Line: <color="red">you look as awful you look awful you look as awful you look
+      awful you look as awful you look awful you look as awful you look awful you
+      look as awful you look awful you look as awful you look awful you look as awful
+      you look awful you look awful you look awful you look awful you look awful
+      you look awful you look as awful you look awful you look as awful you look
+      awful you look awful you look awful you look awful you look awful you look
+      awful you look as awful you look awful you look as awful you look awful you
+      look awful you look awful you look awful you look awful you look awful you
+      look as awful you look awful you look as awful you look awful you look awful
+      you look awful you look awful you look awful you look awful you look as awful
+      you look awful you look as awful you look awful you look awful you look awful
+      you look awful you look awful you look awful you look as awful you look awful
+      you look as awful you look awful you look awful you look awful you look awful
+      you look awful</color>
+    SpeakerVoice: {fileID: 0}
   audioData:
     volume: 0
     priority: 0

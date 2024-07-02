@@ -15,10 +15,6 @@ MonoBehaviour:
   lines:
   - Speaker:
       SpeakerName: 
-    Line: 
-    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
-  - Speaker:
-      SpeakerName: 
     Line: Across from you is the door to the hallway. Next to your bed is a mirror.
     SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   audioData:

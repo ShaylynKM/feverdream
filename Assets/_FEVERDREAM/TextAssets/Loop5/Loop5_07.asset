@@ -15,8 +15,8 @@ MonoBehaviour:
   lines:
   - Speaker:
       SpeakerName: 
-    Line: <color="red">Wash your hands.</color>
-    SpeakerVoice: {fileID: 8300000, guid: 6816f266e3563f0499ef894a8682ba7d, type: 3}
+    Line: You know what to do.
+    SpeakerVoice: {fileID: 8300000, guid: 020d3b18eb696f747b17c80444d8ba4e, type: 3}
   audioData:
     volume: 0
     priority: 0
