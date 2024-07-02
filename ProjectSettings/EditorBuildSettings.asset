@@ -272,12 +272,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop5Scenes/Loop5_14.unity
     guid: e8d3725d899b36947964a0e2ceeeef32
-  - enabled: 0
-    path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop5Scenes/Loop5_15.unity
-    guid: 76279ebb9c6770646993a93aecbbf502
-  - enabled: 0
+  - enabled: 1
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop5Scenes/Loop5_Transition2.unity
-    guid: c098943e48cbd554d8b44c05c31807bb
+    guid: 780a9d6217fde3a448cbb8645f26a103
   - enabled: 1
     path: Assets/_FEVERDREAM/1_Scenes/OfficialScenes/Loop5Scenes/Loop5_15.unity
     guid: 76279ebb9c6770646993a93aecbbf502

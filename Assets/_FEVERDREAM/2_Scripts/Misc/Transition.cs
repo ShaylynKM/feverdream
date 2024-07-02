@@ -12,9 +12,20 @@ public class Transition : MonoBehaviour
     [SerializeField]
     private string _nextSceneName;
 
+    [SerializeField]
+    private GameObject _transitionScreen;
+
     private void Start()
     {
-        StartCoroutine(Wait());
+        if(_transitionScreen != null)
+        {
+            _transitionScreen.SetActive(false);
+            StartCoroutine(LoadSceneAsync(_nextSceneName));
+        }
+        else
+        {
+            StartCoroutine(Wait());
+        }
     }
     IEnumerator Wait()
     {
@@ -29,5 +40,21 @@ public class Transition : MonoBehaviour
         {
             Debug.Log("You forgot to write the scene name, genius.");
         }
+    }
+
+    // For asynchronous loading
+    IEnumerator LoadSceneAsync(string sceneName)
+    {
+        // Load by scene name
+
+        sceneName = _nextSceneName;
+
+        yield return new WaitForSeconds(_transitionTime);
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+
+        _transitionScreen.SetActive(true);
+
+        yield return null;
     }
 }
